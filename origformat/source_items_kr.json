@@ -1,0 +1,287 @@
+{
+  "schema_version": "2.0",
+  "title": "저출생·기후환경 원설문 문항과 결과",
+  "as_of": "2026-08-27",
+  "sources": {
+    "low_birth_2026_results": {
+      "title": "제5차 결혼·출산·양육 및 정부 저출생 대책 인식조사",
+      "organization": "저출산고령사회위원회",
+      "survey_period": "2026-03-25~2026-03-31",
+      "sample_size": 2800,
+      "questionnaire_public": false,
+      "url": "https://betterfuture.go.kr/front/notificationSpace/pressReleaseDetail.do?articleId=564"
+    },
+    "low_birth_2024_question_basis": {
+      "title": "결혼·출산·양육 및 정부 저출생 대책에 대한 인식조사 연구",
+      "organization": "육아정책연구소",
+      "year": 2024,
+      "url": "https://repo.kicce.re.kr/bitstream/2019.oak/5799/2/CR2433.pdf"
+    },
+    "climate_environment_2025": {
+      "title": "2025 국민환경의식조사",
+      "organization": "한국환경연구원",
+      "survey_period": "2025-09-24~2025-10-15",
+      "sample_size": 3008,
+      "questionnaire_public": true,
+      "report_url": "https://www.kei.re.kr/elibList.es?act=view&c_id=769557&elibName=researchreport&mid=a10101050000",
+      "data_url": "https://data.kei.re.kr/data/5011736e-0399-495a-bf77-a2a2e6bdf413",
+      "doi": "10.23160/keidata.31"
+    }
+  },
+  "items": [
+    {
+      "id": "LB1",
+      "domain": "low_birth",
+      "topic": "일·가정양립",
+      "question": {
+        "status": "reconstructed",
+        "text": "다음은 일·가정양립 분야의 향후 정책과제입니다. 저출생 문제 해결을 위해 강화·확대되거나 추가될 필요가 있는 정책과제를 우선순위대로 두 개 선택해 주십시오.",
+        "format": {"type": "ranked_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "low_birth_2024_question_basis",
+          "question_id": "문18-3",
+          "page": 188,
+          "source_text": "다음은 일·가정양립 분야의 향후 정책에 대한 내용입니다. 저출생 문제해결을 위해 각 항목이 강화/확대되거나 추가될 필요가 있는 정도를 1~4점으로 응답해주십시오."
+        }
+      },
+      "result": {
+        "source_id": "low_birth_2026_results",
+        "page": 22,
+        "measure": "1+2순위 선택률",
+        "unit": "percent",
+        "values": [
+          {"code": null, "label": "육아휴직 급여 상한액 추가 인상", "value": 39.0},
+          {"code": null, "label": "엄마·아빠의 육아기 유연근무 사용 활성화", "value": 60.6},
+          {"code": null, "label": "육아휴직 기간 확대", "value": 34.5},
+          {"code": null, "label": "중소기업 육아휴직 추가 지원 확대", "value": 42.5},
+          {"code": null, "label": "임산부 지원을 위한 근로시간 단축 추가 확대", "value": 23.4}
+        ]
+      }
+    },
+    {
+      "id": "LB2",
+      "domain": "low_birth",
+      "topic": "교육·돌봄",
+      "question": {
+        "status": "reconstructed",
+        "text": "다음은 교육·돌봄 분야의 향후 정책과제입니다. 저출생 문제 해결을 위해 강화·확대되거나 추가될 필요가 있는 정책과제를 우선순위대로 두 개 선택해 주십시오.",
+        "format": {"type": "ranked_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "low_birth_2024_question_basis",
+          "question_id": "문19-3",
+          "page": 190,
+          "source_text": "다음은 교육돌봄 지원 분야의 향후 정책에 대한 내용입니다. 저출생 문제해결을 위해 각 항목이 강화/확대되거나 추가될 필요가 있는 정도를 1~4점으로 응답해주십시오."
+        }
+      },
+      "result": {
+        "source_id": "low_birth_2026_results",
+        "page": 23,
+        "measure": "1+2순위 선택률",
+        "unit": "percent",
+        "values": [
+          {"code": null, "label": "아이돌봄서비스 정부지원(대상·시간) 확대", "value": 52.3},
+          {"code": null, "label": "사교육비 경감을 위한 교육과정 및 내용 개선", "value": 37.2},
+          {"code": null, "label": "초등돌봄 인력·환경·프로그램 개선", "value": 37.6},
+          {"code": null, "label": "어린이집·유치원 환경·프로그램 개선", "value": 25.9},
+          {"code": null, "label": "긴급 이용자를 위한 돌봄기관 서비스 유형 확대", "value": 27.0},
+          {"code": null, "label": "한부모·조손가구·학대아동 등 돌봄지원 확대", "value": 20.0}
+        ]
+      }
+    },
+    {
+      "id": "LB3",
+      "domain": "low_birth",
+      "topic": "결혼·출산·양육",
+      "question": {
+        "status": "reconstructed",
+        "text": "다음은 결혼·출산·양육 분야의 향후 정책과제입니다. 저출생 문제 해결을 위해 강화·확대되거나 추가될 필요가 있는 정책과제를 우선순위대로 두 개 선택해 주십시오.",
+        "format": {"type": "ranked_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "low_birth_2024_question_basis",
+          "question_id": "문20-3",
+          "page": 192,
+          "source_text": "다음은 결혼·출산·주거 분야의 향후 정책에 대한 내용입니다. 저출생 문제 해결을 위해 각 항목이 강화/확대되거나 추가될 필요가 있는 정도를 1~4점으로 응답해주십시오."
+        }
+      },
+      "result": {
+        "source_id": "low_birth_2026_results",
+        "page": 24,
+        "measure": "1+2순위 선택률",
+        "unit": "percent",
+        "values": [
+          {"code": null, "label": "결혼·출산 가구에 대한 세금 혜택 확대", "value": 51.3},
+          {"code": null, "label": "부모급여·아동수당 등 현금성 지원 확대", "value": 39.6},
+          {"code": null, "label": "임신·출산 의료서비스 및 건강관리 지원 확대", "value": 41.2},
+          {"code": null, "label": "난임 비용·휴가·상담 지원 확대", "value": 30.6},
+          {"code": null, "label": "소아의료 서비스 이용 편의성 제고", "value": 26.2},
+          {"code": null, "label": "생활밀착형 혜택 확대", "value": 11.1}
+        ]
+      }
+    },
+    {
+      "id": "LB4",
+      "domain": "low_birth",
+      "topic": "주거",
+      "question": {
+        "status": "reconstructed",
+        "text": "다음은 주거 분야의 향후 정책과제입니다. 저출생 문제 해결을 위해 강화·확대되거나 추가될 필요가 있는 정책과제를 우선순위대로 두 개 선택해 주십시오.",
+        "format": {"type": "ranked_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "low_birth_2024_question_basis",
+          "question_id": "문20-3",
+          "page": 192,
+          "source_text": "다음은 결혼·출산·주거 분야의 향후 정책에 대한 내용입니다. 저출생 문제 해결을 위해 각 항목이 강화/확대되거나 추가될 필요가 있는 정도를 1~4점으로 응답해주십시오."
+        }
+      },
+      "result": {
+        "source_id": "low_birth_2026_results",
+        "page": 25,
+        "measure": "1+2순위 선택률",
+        "unit": "percent",
+        "values": [
+          {"code": null, "label": "주택구입·전세자금 소득기준 추가 완화", "value": 45.3},
+          {"code": null, "label": "출산가구 대상 주거 대출금리 인하", "value": 34.9},
+          {"code": null, "label": "주택청약 요건 완화 및 기회 확대(신혼·출산)", "value": 39.7},
+          {"code": null, "label": "신혼·출산가구 주거 대출금액 확대", "value": 29.6},
+          {"code": null, "label": "신혼·출산·다자녀가구 전용 주택 공급 확대", "value": 33.7},
+          {"code": null, "label": "월세 세액공제 확대 등 주거비 부담 완화", "value": 16.9}
+        ]
+      }
+    },
+    {
+      "id": "D2",
+      "domain": "climate_environment",
+      "topic": "환경보전과 경제성장",
+      "question": {
+        "status": "original",
+        "text": "환경보전과 경제성장의 우선순위에 대한 귀하의 의견을 표시해 주십시오.",
+        "format": {
+          "type": "bipolar_scale",
+          "selection_count": 1,
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "anchors": {
+              "1": "경제성장이 다소 둔화되더라도 환경보전에 우선순위를 두어야 한다.",
+              "5": "환경이 다소 훼손되더라도 경제성장에 우선순위를 두어야 한다."
+            }
+          }
+        },
+        "provenance": {
+          "source_id": "climate_environment_2025",
+          "question_id": "D2",
+          "page": 87,
+          "source_text": "환경보전과 경제성장의 우선순위에 대한 귀하의 의견을 표시해 주십시오."
+        }
+      },
+      "result": {
+        "source_id": "climate_environment_2025",
+        "page": 46,
+        "measure": "응답률",
+        "unit": "percent",
+        "values": [
+          {"code": "1–2", "label": "환경보전 우선", "value": 42.2},
+          {"code": "3", "label": "중립", "value": 38.2},
+          {"code": "4–5", "label": "경제성장 우선", "value": 19.6}
+        ]
+      }
+    },
+    {
+      "id": "D6",
+      "domain": "climate_environment",
+      "topic": "환경문제 해결수단",
+      "question": {
+        "status": "original",
+        "text": "환경문제 해결을 위해 가장 효과적인 방법은 무엇이라고 생각하십니까? 효과적인 순서대로 두 개만 선택하여 주십시오.",
+        "format": {"type": "ranked_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "climate_environment_2025",
+          "question_id": "D6",
+          "page": 89,
+          "source_text": "환경문제 해결을 위해 가장 효과적인 방법은 무엇이라고 생각하십니까? 효과적인 순서대로 두 개만 선택하여 주십시오."
+        }
+      },
+      "result": {
+        "source_id": "climate_environment_2025",
+        "page": 51,
+        "measure": "1순위 응답률",
+        "unit": "percent",
+        "values": [
+          {"code": "1", "label": "환경보전을 위한 행동 및 방법에 대한 정보제공 확대", "value": 8.4},
+          {"code": "2", "label": "환경관련 교육기회의 확대", "value": 6.2},
+          {"code": "3", "label": "환경규제 강화", "value": 11.1},
+          {"code": "4", "label": "환경피해 유발에 따른 처벌강화(예: 보다 높은 벌금 및 엄격한 법 집행)", "value": 16.0},
+          {"code": "5", "label": "환경 오염물질 배출시설 및 업종 등에 대한 세금 부과", "value": 11.0},
+          {"code": "6", "label": "환경보전 노력에 대한 금전적 보상(예: 텀블러, 머그컵 사용시 할인제도 도입 등)", "value": 12.5},
+          {"code": "7", "label": "환경 오염물질 저감기술에 대한 기술개발(R&D) 투자 확대", "value": 13.8},
+          {"code": "8", "label": "환경친화적 기업 및 제품에 대한 인증/마크 제도의 확산", "value": 5.4},
+          {"code": "9", "label": "국민, 기업 등 개별 주체의 자발적 노력", "value": 15.5}
+        ]
+      }
+    },
+    {
+      "id": "E10",
+      "domain": "climate_environment",
+      "topic": "기후위기 대응정책",
+      "question": {
+        "status": "original",
+        "text": "귀하는 기후 위기에 효과적으로 대응하기 위해 정부가 우선적으로 추진해야 할 정책이 무엇이라고 생각하십니까? (택 2)",
+        "format": {"type": "multiple_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "climate_environment_2025",
+          "question_id": "E10",
+          "page": 93,
+          "source_text": "귀하는 기후 위기에 효과적으로 대응하기 위해 정부가 우선적으로 추진해야 할 정책이 무엇이라고 생각하십니까? (택 2)"
+        }
+      },
+      "result": {
+        "source_id": "climate_environment_2025",
+        "page": 64,
+        "measure": "선택률",
+        "unit": "percent",
+        "values": [
+          {"code": "1", "label": "에너지 효율적 사용 및 절감(고효율 가전 보급, 건물 단열 개선 등)", "value": 23.6},
+          {"code": "2", "label": "에너지 전환(재생에너지 확대, 화석연료 감축 등)", "value": 21.7},
+          {"code": "3", "label": "기후변화 적응 정책(홍수·폭염 대비 인프라, 기후 재해 대응 등)", "value": 46.7},
+          {"code": "4", "label": "시민·소비자의 지속가능한 생활 습관 장려(인센티브 지급, 홍보, 교육 등)", "value": 22.9},
+          {"code": "5", "label": "기업 규제 및 책임 강화(배출 규제, 기업 의무 강화 등)", "value": 25.6},
+          {"code": "6", "label": "국제 협력(개도국 지원, 기술 협력 등)", "value": 9.7},
+          {"code": "7", "label": "기술 혁신 및 연구 개발 지원(연구 인프라 지원, 연구 예산 확대 등)", "value": 21.1},
+          {"code": "8", "label": "자연환경 보전(녹지 확대, 생태계 복원, 탄소 흡수원 관리 등)", "value": 28.5}
+        ]
+      }
+    },
+    {
+      "id": "E13",
+      "domain": "climate_environment",
+      "topic": "기후테크 육성 분야",
+      "question": {
+        "status": "original",
+        "text": "귀하는 기후변화 대응을 위해 우선적으로 육성해야 하는 기후테크 분야가 무엇이라고 생각하십니까?",
+        "format": {"type": "multiple_choice", "selection_count": 2, "scale": null},
+        "provenance": {
+          "source_id": "climate_environment_2025",
+          "question_id": "E13",
+          "page": 94,
+          "source_text": "귀하는 기후변화 대응을 위해 우선적으로 육성해야 하는 기후테크 분야가 무엇이라고 생각하십니까?"
+        }
+      },
+      "result": {
+        "source_id": "climate_environment_2025",
+        "page": 67,
+        "measure": "선택률",
+        "unit": "percent",
+        "values": [
+          {"code": "1", "label": "재생에너지(예: 태양광, 풍력)", "value": 45.4},
+          {"code": "2", "label": "탄소 포집 및 활용(CCUS)", "value": 18.7},
+          {"code": "3", "label": "순환 경제(예: 재활용, 폐기물 관리)", "value": 47.2},
+          {"code": "4", "label": "지속가능한 농업 및 식량 기술", "value": 25.9},
+          {"code": "5", "label": "친환경 모빌리티(예: 전기차, 수소차)", "value": 26.5},
+          {"code": "6", "label": "이차전지 및 연료전지 등 에너지 저장", "value": 16.5},
+          {"code": "7", "label": "AI, 빅데이터 기반 기후 솔루션", "value": 19.6},
+          {"code": "8", "label": "기타(직접 기입)", "value": 0.2}
+        ]
+      }
+    }
+  ]
+}

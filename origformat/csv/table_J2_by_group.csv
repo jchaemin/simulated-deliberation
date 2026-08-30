@@ -1,0 +1,97 @@
+panel,axis,group,question,persona,human,row_gap
+environmental,Overall,Overall,Env. priority,99.5,68.2,46.5
+environmental,Overall,Overall,Env. means,17.7,53.9,46.5
+environmental,Overall,Overall,Clim. strategy,0.6,70.4,46.5
+environmental,Overall,Overall,Clim. tech,99.5,50.6,46.5
+environmental,Sex,Male,Env. priority,99.0,57.0,44.7
+environmental,Sex,Male,Env. means,28.4,53.6,44.7
+environmental,Sex,Male,Clim. strategy,0.9,66.6,44.7
+environmental,Sex,Male,Clim. tech,99.4,53.3,44.7
+environmental,Sex,Female,Env. priority,100.0,79.8,47.9
+environmental,Sex,Female,Env. means,8.0,54.3,47.9
+environmental,Sex,Female,Clim. strategy,0.3,73.9,47.9
+environmental,Sex,Female,Clim. tech,99.7,48.2,47.9
+environmental,Age,19–29,Env. priority,98.7,50.8,53.4
+environmental,Age,19–29,Env. means,10.0,49.1,53.4
+environmental,Age,19–29,Clim. strategy,0.6,73.6,53.4
+environmental,Age,19–29,Clim. tech,100.0,46.5,53.4
+environmental,Age,30–44,Env. priority,99.3,58.4,49.6
+environmental,Age,30–44,Env. means,15.9,56.7,49.6
+environmental,Age,30–44,Clim. strategy,0.6,70.9,49.6
+environmental,Age,30–44,Clim. tech,100.0,53.4,49.6
+environmental,Age,45–59,Env. priority,100.0,74.9,42.7
+environmental,Age,45–59,Env. means,25.4,54.6,42.7
+environmental,Age,45–59,Clim. strategy,1.3,69.3,42.7
+environmental,Age,45–59,Clim. tech,98.8,50.4,42.7
+environmental,Age,60+,Env. priority,100.0,81.2,42.5
+environmental,Age,60+,Env. means,19.7,53.1,42.5
+environmental,Age,60+,Clim. strategy,0.0,69.2,42.5
+environmental,Age,60+,Clim. tech,99.4,50.6,42.5
+environmental,Education,≤ middle,Env. priority,99.3,87.0,34.5
+environmental,Education,≤ middle,Env. means,14.5,57.1,34.5
+environmental,Education,≤ middle,Clim. strategy,2.0,50.0,34.5
+environmental,Education,≤ middle,Clim. tech,98.8,63.6,34.5
+environmental,Education,High school,Env. priority,98.7,72.9,45.5
+environmental,Education,High school,Env. means,17.7,52.5,45.5
+environmental,Education,High school,Clim. strategy,0.0,70.1,45.5
+environmental,Education,High school,Clim. tech,99.4,47.9,45.5
+environmental,Education,College,Env. priority,100.0,65.0,46.8
+environmental,Education,College,Env. means,21.4,54.6,46.8
+environmental,Education,College,Clim. strategy,0.0,71.4,46.8
+environmental,Education,College,Clim. tech,100.0,52.2,46.8
+environmental,Education,Graduate,Env. priority,100.0,68.1,46.6
+environmental,Education,Graduate,Env. means,17.1,54.6,46.6
+environmental,Education,Graduate,Clim. strategy,0.6,67.6,46.6
+environmental,Education,Graduate,Clim. tech,100.0,50.0,46.6
+environmental,Region,Capital area,Env. priority,99.2,68.8,46.3
+environmental,Region,Capital area,Env. means,19.2,52.6,46.3
+environmental,Region,Capital area,Clim. strategy,0.0,70.0,46.3
+environmental,Region,Capital area,Clim. tech,100.0,48.7,46.3
+environmental,Region,Yeongnam,Env. priority,100.0,64.3,44.9
+environmental,Region,Yeongnam,Env. means,26.5,52.2,44.9
+environmental,Region,Yeongnam,Clim. strategy,1.6,71.3,44.9
+environmental,Region,Yeongnam,Clim. tech,100.0,51.4,44.9
+environmental,Region,Honam,Env. priority,99.2,73.2,46.0
+environmental,Region,Honam,Env. means,14.8,60.4,46.0
+environmental,Region,Honam,Clim. strategy,0.0,69.1,46.0
+environmental,Region,Honam,Clim. tech,99.2,55.9,46.0
+environmental,Region,Chungcheong,Env. priority,99.2,69.6,48.0
+environmental,Region,Chungcheong,Env. means,13.3,56.8,48.0
+environmental,Region,Chungcheong,Clim. strategy,0.8,72.7,48.0
+environmental,Region,Chungcheong,Clim. tech,100.0,52.9,48.0
+environmental,Region,Gangwon/Jeju,Env. priority,100.0,68.9,45.9
+environmental,Region,Gangwon/Jeju,Env. means,14.4,57.1,45.9
+environmental,Region,Gangwon/Jeju,Clim. strategy,0.8,65.4,45.9
+environmental,Region,Gangwon/Jeju,Clim. tech,98.4,53.3,45.9
+low_birthrate,Overall,Overall,Work–family,100.0,60.8,45.6
+low_birthrate,Overall,Overall,Educ.–care,100.0,58.4,45.6
+low_birthrate,Overall,Overall,Econ. support,0.3,56.4,45.6
+low_birthrate,Overall,Overall,Housing,,53.3,45.6
+low_birthrate,Sex,Male,Work–family,100.0,53.4,48.4
+low_birthrate,Sex,Male,Educ.–care,100.0,57.8,48.4
+low_birthrate,Sex,Male,Econ. support,0.5,56.9,48.4
+low_birthrate,Sex,Male,Housing,,50.0,48.4
+low_birthrate,Sex,Female,Work–family,100.0,68.7,42.7
+low_birthrate,Sex,Female,Educ.–care,100.0,59.1,42.7
+low_birthrate,Sex,Female,Econ. support,0.0,55.9,42.7
+low_birthrate,Sex,Female,Housing,,56.8,42.7
+low_birthrate,AgeB,20s,Work–family,100.0,61.5,46.5
+low_birthrate,AgeB,20s,Educ.–care,100.0,60.6,46.5
+low_birthrate,AgeB,20s,Econ. support,0.0,61.7,46.5
+low_birthrate,AgeB,20s,Housing,,45.7,46.5
+low_birthrate,AgeB,30s,Work–family,100.0,59.8,45.4
+low_birthrate,AgeB,30s,Educ.–care,100.0,61.9,45.4
+low_birthrate,AgeB,30s,Econ. support,0.0,58.0,45.4
+low_birthrate,AgeB,30s,Housing,,52.5,45.4
+low_birthrate,AgeB,40s,Work–family,100.0,61.5,45.2
+low_birthrate,AgeB,40s,Educ.–care,100.0,54.8,45.2
+low_birthrate,AgeB,40s,Econ. support,1.2,53.0,45.2
+low_birthrate,AgeB,40s,Housing,,57.2,45.2
+low_birthrate,Marital,Single,Work–family,100.0,61.6,45.9
+low_birthrate,Marital,Single,Educ.–care,100.0,62.1,45.9
+low_birthrate,Marital,Single,Econ. support,0.0,61.4,45.9
+low_birthrate,Marital,Single,Housing,,49.4,45.9
+low_birthrate,Marital,Married,Work–family,100.0,60.0,45.7
+low_birthrate,Marital,Married,Educ.–care,100.0,54.9,45.7
+low_birthrate,Marital,Married,Econ. support,0.5,52.6,45.7
+low_birthrate,Marital,Married,Housing,,57.4,45.7

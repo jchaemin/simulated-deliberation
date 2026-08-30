@@ -1,0 +1,7 @@
+qid,n_options,side,same_pair_pct,pairs_used,modal_pair_pct,n,cells
+env2,9,human,3.7,36,6.8,3008,182
+env2,9,persona,50.8,11,64.8,640,160
+env3,8,human,5.3,28,9.9,3008,182
+env3,8,persona,92.9,6,96.1,640,160
+env4,8,human,7.6,25,17.3,3008,182
+env4,8,persona,60.5,5,71.6,640,160

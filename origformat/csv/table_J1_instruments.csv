@@ -1,0 +1,9 @@
+qid,question,human,nl_forced_choice,orig_format,orig_reversed
+env1,Env. priority,68.2,96.1,99.5,99.8
+env2,Env. means,53.9,0.6,17.7,19.2
+env3,Clim. strategy,70.4,90.2,0.6,5.5
+env4,Clim. tech,50.6,63.3,99.5,97.6
+birth1,Work–family,60.8,99.8,100.0,91.2
+birth2,Educ.–care,58.4,62.0,100.0,99.8
+birth3,Econ. support,56.4,10.8,0.3,0.3
+birth4,Housing,53.3,25.8,,0.0

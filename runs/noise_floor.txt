@@ -1,0 +1,4 @@
+temp 0.7 env4: test-retest flip rate 25% (n=40)
+temp 0.7 birth2: test-retest flip rate 15% (n=40)
+temp 0.0 env4: test-retest flip rate 5% (n=40)
+temp 0.0 birth2: test-retest flip rate 10% (n=40)

@@ -1,0 +1,1055 @@
+{
+ "table_J1_instruments": {
+  "rows": [
+   {
+    "question": "Env. priority",
+    "qid": "env1",
+    "human": 68.2,
+    "nl_forced_choice": 96.1,
+    "orig_format": 99.5,
+    "orig_reversed": 99.8
+   },
+   {
+    "question": "Env. means",
+    "qid": "env2",
+    "human": 53.9,
+    "nl_forced_choice": 0.6,
+    "orig_format": 17.7,
+    "orig_reversed": 19.2
+   },
+   {
+    "question": "Clim. strategy",
+    "qid": "env3",
+    "human": 70.4,
+    "nl_forced_choice": 90.2,
+    "orig_format": 0.6,
+    "orig_reversed": 5.5
+   },
+   {
+    "question": "Clim. tech",
+    "qid": "env4",
+    "human": 50.6,
+    "nl_forced_choice": 63.3,
+    "orig_format": 99.5,
+    "orig_reversed": 97.6
+   },
+   {
+    "question": "Work–family",
+    "qid": "birth1",
+    "human": 60.8,
+    "nl_forced_choice": 99.8,
+    "orig_format": 100.0,
+    "orig_reversed": 91.2
+   },
+   {
+    "question": "Educ.–care",
+    "qid": "birth2",
+    "human": 58.4,
+    "nl_forced_choice": 62.0,
+    "orig_format": 100.0,
+    "orig_reversed": 99.8
+   },
+   {
+    "question": "Econ. support",
+    "qid": "birth3",
+    "human": 56.4,
+    "nl_forced_choice": 10.8,
+    "orig_format": 0.3,
+    "orig_reversed": 0.3
+   },
+   {
+    "question": "Housing",
+    "qid": "birth4",
+    "human": 53.3,
+    "nl_forced_choice": 25.8,
+    "orig_format": null,
+    "orig_reversed": 0.0
+   }
+  ],
+  "mean_abs_gap": {
+   "basis": [
+    "env1",
+    "env2",
+    "env3",
+    "env4",
+    "birth1",
+    "birth2",
+    "birth3"
+   ],
+   "nl_forced_choice": 28.8,
+   "orig_format": 46.2,
+   "orig_reversed": 43.7
+  }
+ },
+ "table_J2_by_group": {
+  "environmental": [
+   {
+    "axis": "Overall",
+    "group": "Overall",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.5,
+      "human": 68.2
+     },
+     "Env. means": {
+      "persona": 17.7,
+      "human": 53.9
+     },
+     "Clim. strategy": {
+      "persona": 0.6,
+      "human": 70.4
+     },
+     "Clim. tech": {
+      "persona": 99.5,
+      "human": 50.6
+     }
+    },
+    "row_gap": 46.5
+   },
+   {
+    "axis": "Sex",
+    "group": "Male",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.0,
+      "human": 57.0
+     },
+     "Env. means": {
+      "persona": 28.4,
+      "human": 53.6
+     },
+     "Clim. strategy": {
+      "persona": 0.9,
+      "human": 66.6
+     },
+     "Clim. tech": {
+      "persona": 99.4,
+      "human": 53.3
+     }
+    },
+    "row_gap": 44.7
+   },
+   {
+    "axis": "Sex",
+    "group": "Female",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 79.8
+     },
+     "Env. means": {
+      "persona": 8.0,
+      "human": 54.3
+     },
+     "Clim. strategy": {
+      "persona": 0.3,
+      "human": 73.9
+     },
+     "Clim. tech": {
+      "persona": 99.7,
+      "human": 48.2
+     }
+    },
+    "row_gap": 47.9
+   },
+   {
+    "axis": "Age",
+    "group": "19–29",
+    "cells": {
+     "Env. priority": {
+      "persona": 98.7,
+      "human": 50.8
+     },
+     "Env. means": {
+      "persona": 10.0,
+      "human": 49.1
+     },
+     "Clim. strategy": {
+      "persona": 0.6,
+      "human": 73.6
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 46.5
+     }
+    },
+    "row_gap": 53.4
+   },
+   {
+    "axis": "Age",
+    "group": "30–44",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.3,
+      "human": 58.4
+     },
+     "Env. means": {
+      "persona": 15.9,
+      "human": 56.7
+     },
+     "Clim. strategy": {
+      "persona": 0.6,
+      "human": 70.9
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 53.4
+     }
+    },
+    "row_gap": 49.6
+   },
+   {
+    "axis": "Age",
+    "group": "45–59",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 74.9
+     },
+     "Env. means": {
+      "persona": 25.4,
+      "human": 54.6
+     },
+     "Clim. strategy": {
+      "persona": 1.3,
+      "human": 69.3
+     },
+     "Clim. tech": {
+      "persona": 98.8,
+      "human": 50.4
+     }
+    },
+    "row_gap": 42.7
+   },
+   {
+    "axis": "Age",
+    "group": "60+",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 81.2
+     },
+     "Env. means": {
+      "persona": 19.7,
+      "human": 53.1
+     },
+     "Clim. strategy": {
+      "persona": 0.0,
+      "human": 69.2
+     },
+     "Clim. tech": {
+      "persona": 99.4,
+      "human": 50.6
+     }
+    },
+    "row_gap": 42.5
+   },
+   {
+    "axis": "Education",
+    "group": "≤ middle",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.3,
+      "human": 87.0
+     },
+     "Env. means": {
+      "persona": 14.5,
+      "human": 57.1
+     },
+     "Clim. strategy": {
+      "persona": 2.0,
+      "human": 50.0
+     },
+     "Clim. tech": {
+      "persona": 98.8,
+      "human": 63.6
+     }
+    },
+    "row_gap": 34.5
+   },
+   {
+    "axis": "Education",
+    "group": "High school",
+    "cells": {
+     "Env. priority": {
+      "persona": 98.7,
+      "human": 72.9
+     },
+     "Env. means": {
+      "persona": 17.7,
+      "human": 52.5
+     },
+     "Clim. strategy": {
+      "persona": 0.0,
+      "human": 70.1
+     },
+     "Clim. tech": {
+      "persona": 99.4,
+      "human": 47.9
+     }
+    },
+    "row_gap": 45.5
+   },
+   {
+    "axis": "Education",
+    "group": "College",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 65.0
+     },
+     "Env. means": {
+      "persona": 21.4,
+      "human": 54.6
+     },
+     "Clim. strategy": {
+      "persona": 0.0,
+      "human": 71.4
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 52.2
+     }
+    },
+    "row_gap": 46.8
+   },
+   {
+    "axis": "Education",
+    "group": "Graduate",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 68.1
+     },
+     "Env. means": {
+      "persona": 17.1,
+      "human": 54.6
+     },
+     "Clim. strategy": {
+      "persona": 0.6,
+      "human": 67.6
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 50.0
+     }
+    },
+    "row_gap": 46.6
+   },
+   {
+    "axis": "Region",
+    "group": "Capital area",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.2,
+      "human": 68.8
+     },
+     "Env. means": {
+      "persona": 19.2,
+      "human": 52.6
+     },
+     "Clim. strategy": {
+      "persona": 0.0,
+      "human": 70.0
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 48.7
+     }
+    },
+    "row_gap": 46.3
+   },
+   {
+    "axis": "Region",
+    "group": "Yeongnam",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 64.3
+     },
+     "Env. means": {
+      "persona": 26.5,
+      "human": 52.2
+     },
+     "Clim. strategy": {
+      "persona": 1.6,
+      "human": 71.3
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 51.4
+     }
+    },
+    "row_gap": 44.9
+   },
+   {
+    "axis": "Region",
+    "group": "Honam",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.2,
+      "human": 73.2
+     },
+     "Env. means": {
+      "persona": 14.8,
+      "human": 60.4
+     },
+     "Clim. strategy": {
+      "persona": 0.0,
+      "human": 69.1
+     },
+     "Clim. tech": {
+      "persona": 99.2,
+      "human": 55.9
+     }
+    },
+    "row_gap": 46.0
+   },
+   {
+    "axis": "Region",
+    "group": "Chungcheong",
+    "cells": {
+     "Env. priority": {
+      "persona": 99.2,
+      "human": 69.6
+     },
+     "Env. means": {
+      "persona": 13.3,
+      "human": 56.8
+     },
+     "Clim. strategy": {
+      "persona": 0.8,
+      "human": 72.7
+     },
+     "Clim. tech": {
+      "persona": 100.0,
+      "human": 52.9
+     }
+    },
+    "row_gap": 48.0
+   },
+   {
+    "axis": "Region",
+    "group": "Gangwon/Jeju",
+    "cells": {
+     "Env. priority": {
+      "persona": 100.0,
+      "human": 68.9
+     },
+     "Env. means": {
+      "persona": 14.4,
+      "human": 57.1
+     },
+     "Clim. strategy": {
+      "persona": 0.8,
+      "human": 65.4
+     },
+     "Clim. tech": {
+      "persona": 98.4,
+      "human": 53.3
+     }
+    },
+    "row_gap": 45.9
+   }
+  ],
+  "low_birthrate": [
+   {
+    "axis": "Overall",
+    "group": "Overall",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 60.8
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 58.4
+     },
+     "Econ. support": {
+      "persona": 0.3,
+      "human": 56.4
+     },
+     "Housing": {
+      "persona": null,
+      "human": 53.3
+     }
+    },
+    "row_gap": 45.6
+   },
+   {
+    "axis": "Sex",
+    "group": "Male",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 53.4
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 57.8
+     },
+     "Econ. support": {
+      "persona": 0.5,
+      "human": 56.9
+     },
+     "Housing": {
+      "persona": null,
+      "human": 50.0
+     }
+    },
+    "row_gap": 48.4
+   },
+   {
+    "axis": "Sex",
+    "group": "Female",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 68.7
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 59.1
+     },
+     "Econ. support": {
+      "persona": 0.0,
+      "human": 55.9
+     },
+     "Housing": {
+      "persona": null,
+      "human": 56.8
+     }
+    },
+    "row_gap": 42.7
+   },
+   {
+    "axis": "AgeB",
+    "group": "20s",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 61.5
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 60.6
+     },
+     "Econ. support": {
+      "persona": 0.0,
+      "human": 61.7
+     },
+     "Housing": {
+      "persona": null,
+      "human": 45.7
+     }
+    },
+    "row_gap": 46.5
+   },
+   {
+    "axis": "AgeB",
+    "group": "30s",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 59.8
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 61.9
+     },
+     "Econ. support": {
+      "persona": 0.0,
+      "human": 58.0
+     },
+     "Housing": {
+      "persona": null,
+      "human": 52.5
+     }
+    },
+    "row_gap": 45.4
+   },
+   {
+    "axis": "AgeB",
+    "group": "40s",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 61.5
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 54.8
+     },
+     "Econ. support": {
+      "persona": 1.2,
+      "human": 53.0
+     },
+     "Housing": {
+      "persona": null,
+      "human": 57.2
+     }
+    },
+    "row_gap": 45.2
+   },
+   {
+    "axis": "Marital",
+    "group": "Single",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 61.6
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 62.1
+     },
+     "Econ. support": {
+      "persona": 0.0,
+      "human": 61.4
+     },
+     "Housing": {
+      "persona": null,
+      "human": 49.4
+     }
+    },
+    "row_gap": 45.9
+   },
+   {
+    "axis": "Marital",
+    "group": "Married",
+    "cells": {
+     "Work–family": {
+      "persona": 100.0,
+      "human": 60.0
+     },
+     "Educ.–care": {
+      "persona": 100.0,
+      "human": 54.9
+     },
+     "Econ. support": {
+      "persona": 0.5,
+      "human": 52.6
+     },
+     "Housing": {
+      "persona": null,
+      "human": 57.4
+     }
+    },
+    "row_gap": 45.7
+   }
+  ],
+  "column_gap": {
+   "environmental": {
+    "Env. priority": "30",
+    "Env. means": "37",
+    "Clim. strategy": "68",
+    "Clim. tech": "48"
+   },
+   "low_birthrate": {
+    "Work–family": "39",
+    "Educ.–care": "41",
+    "Econ. support": "57",
+    "Housing": "—"
+   }
+  }
+ },
+ "table_J3_within_cell": {
+  "env2": {
+   "n_options": 9,
+   "human": {
+    "same_pair_pct": 3.7,
+    "pairs_used": 36,
+    "modal_pair_pct": 6.8,
+    "n": 3008,
+    "cells": 182
+   },
+   "persona": {
+    "same_pair_pct": 50.8,
+    "pairs_used": 11,
+    "modal_pair_pct": 64.8,
+    "n": 640,
+    "cells": 160
+   }
+  },
+  "env3": {
+   "n_options": 8,
+   "human": {
+    "same_pair_pct": 5.3,
+    "pairs_used": 28,
+    "modal_pair_pct": 9.9,
+    "n": 3008,
+    "cells": 182
+   },
+   "persona": {
+    "same_pair_pct": 92.9,
+    "pairs_used": 6,
+    "modal_pair_pct": 96.1,
+    "n": 640,
+    "cells": 160
+   }
+  },
+  "env4": {
+   "n_options": 8,
+   "human": {
+    "same_pair_pct": 7.6,
+    "pairs_used": 25,
+    "modal_pair_pct": 17.3,
+    "n": 3008,
+    "cells": 182
+   },
+   "persona": {
+    "same_pair_pct": 60.5,
+    "pairs_used": 5,
+    "modal_pair_pct": 71.6,
+    "n": 640,
+    "cells": 160
+   }
+  }
+ },
+ "option_profiles": {
+  "env2": {
+   "measure_human": "1순위 응답률",
+   "n_persona": 640,
+   "poleA": 4,
+   "poleB": 9,
+   "options": [
+    {
+     "n": 1,
+     "label": "환경보전을 위한 행동 및 방법에 대한 정보제공 확대",
+     "human_pct": 8.4,
+     "persona_pct": 6.7
+    },
+    {
+     "n": 2,
+     "label": "환경관련 교육기회의 확대",
+     "human_pct": 6.2,
+     "persona_pct": 73.4
+    },
+    {
+     "n": 3,
+     "label": "환경규제 강화",
+     "human_pct": 11.1,
+     "persona_pct": 26.1
+    },
+    {
+     "n": 4,
+     "label": "환경피해 유발에 따른 처벌강화(예: 보다 높은 벌금 및 엄격한 법 집행)",
+     "human_pct": 16.0,
+     "persona_pct": 15.2
+    },
+    {
+     "n": 5,
+     "label": "환경 오염물질 배출시설 및 업종 등에 대한 세금 부과",
+     "human_pct": 11.0,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 6,
+     "label": "환경보전 노력에 대한 금전적 보상(예: 텀블러, 머그컵 사용시 할인제도 도입 등)",
+     "human_pct": 12.5,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 7,
+     "label": "환경 오염물질 저감기술에 대한 기술개발(R&D) 투자 확대",
+     "human_pct": 13.8,
+     "persona_pct": 8.1
+    },
+    {
+     "n": 8,
+     "label": "환경친화적 기업 및 제품에 대한 인증/마크 제도의 확산",
+     "human_pct": 5.4,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 9,
+     "label": "국민, 기업 등 개별 주체의 자발적 노력",
+     "human_pct": 15.5,
+     "persona_pct": 70.5
+    }
+   ]
+  },
+  "env3": {
+   "measure_human": "선택률",
+   "n_persona": 640,
+   "poleA": 3,
+   "poleB": 2,
+   "options": [
+    {
+     "n": 1,
+     "label": "에너지 효율적 사용 및 절감(고효율 가전 보급, 건물 단열 개선 등)",
+     "human_pct": 23.6,
+     "persona_pct": 99.1
+    },
+    {
+     "n": 2,
+     "label": "에너지 전환(재생에너지 확대, 화석연료 감축 등)",
+     "human_pct": 21.7,
+     "persona_pct": 97.0
+    },
+    {
+     "n": 3,
+     "label": "기후변화 적응 정책(홍수·폭염 대비 인프라, 기후 재해 대응 등)",
+     "human_pct": 46.7,
+     "persona_pct": 0.6
+    },
+    {
+     "n": 4,
+     "label": "시민·소비자의 지속가능한 생활 습관 장려(인센티브 지급, 홍보, 교육 등)",
+     "human_pct": 22.9,
+     "persona_pct": 2.0
+    },
+    {
+     "n": 5,
+     "label": "기업 규제 및 책임 강화(배출 규제, 기업 의무 강화 등)",
+     "human_pct": 25.6,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 6,
+     "label": "국제 협력(개도국 지원, 기술 협력 등)",
+     "human_pct": 9.7,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 7,
+     "label": "기술 혁신 및 연구 개발 지원(연구 인프라 지원, 연구 예산 확대 등)",
+     "human_pct": 21.1,
+     "persona_pct": 0.8
+    },
+    {
+     "n": 8,
+     "label": "자연환경 보전(녹지 확대, 생태계 복원, 탄소 흡수원 관리 등)",
+     "human_pct": 28.5,
+     "persona_pct": 0.5
+    }
+   ]
+  },
+  "env4": {
+   "measure_human": "선택률",
+   "n_persona": 640,
+   "poleA": 1,
+   "poleB": 3,
+   "options": [
+    {
+     "n": 1,
+     "label": "재생에너지(예: 태양광, 풍력)",
+     "human_pct": 45.4,
+     "persona_pct": 100.0
+    },
+    {
+     "n": 2,
+     "label": "탄소 포집 및 활용(CCUS)",
+     "human_pct": 18.7,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 3,
+     "label": "순환 경제(예: 재활용, 폐기물 관리)",
+     "human_pct": 47.2,
+     "persona_pct": 5.9
+    },
+    {
+     "n": 4,
+     "label": "지속가능한 농업 및 식량 기술",
+     "human_pct": 25.9,
+     "persona_pct": 9.4
+    },
+    {
+     "n": 5,
+     "label": "친환경 모빌리티(예: 전기차, 수소차)",
+     "human_pct": 26.5,
+     "persona_pct": 71.6
+    },
+    {
+     "n": 6,
+     "label": "이차전지 및 연료전지 등 에너지 저장",
+     "human_pct": 16.5,
+     "persona_pct": 11.6
+    },
+    {
+     "n": 7,
+     "label": "AI, 빅데이터 기반 기후 솔루션",
+     "human_pct": 19.6,
+     "persona_pct": 1.6
+    },
+    {
+     "n": 8,
+     "label": "기타(직접 기입)",
+     "human_pct": 0.2,
+     "persona_pct": 0.0
+    }
+   ]
+  },
+  "birth1": {
+   "measure_human": "1+2순위 선택률",
+   "n_persona": 640,
+   "poleA": 2,
+   "poleB": 1,
+   "options": [
+    {
+     "n": 1,
+     "label": "육아휴직 급여 상한액 추가 인상",
+     "human_pct": 39.0,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 2,
+     "label": "엄마·아빠의 육아기 유연근무 사용 활성화",
+     "human_pct": 60.6,
+     "persona_pct": 100.0
+    },
+    {
+     "n": 3,
+     "label": "육아휴직 기간 확대",
+     "human_pct": 34.5,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 4,
+     "label": "중소기업 육아휴직 추가 지원 확대",
+     "human_pct": 42.5,
+     "persona_pct": 95.8
+    },
+    {
+     "n": 5,
+     "label": "임산부 지원을 위한 근로시간 단축 추가 확대",
+     "human_pct": 23.4,
+     "persona_pct": 4.2
+    }
+   ]
+  },
+  "birth2": {
+   "measure_human": "1+2순위 선택률",
+   "n_persona": 640,
+   "poleA": 1,
+   "poleB": 2,
+   "options": [
+    {
+     "n": 1,
+     "label": "아이돌봄서비스 정부지원(대상·시간) 확대",
+     "human_pct": 52.3,
+     "persona_pct": 100.0
+    },
+    {
+     "n": 2,
+     "label": "사교육비 경감을 위한 교육과정 및 내용 개선",
+     "human_pct": 37.2,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 3,
+     "label": "초등돌봄 인력·환경·프로그램 개선",
+     "human_pct": 37.6,
+     "persona_pct": 88.1
+    },
+    {
+     "n": 4,
+     "label": "어린이집·유치원 환경·프로그램 개선",
+     "human_pct": 25.9,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 5,
+     "label": "긴급 이용자를 위한 돌봄기관 서비스 유형 확대",
+     "human_pct": 27.0,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 6,
+     "label": "한부모·조손가구·학대아동 등 돌봄지원 확대",
+     "human_pct": 20.0,
+     "persona_pct": 11.9
+    }
+   ]
+  },
+  "birth3": {
+   "measure_human": "1+2순위 선택률",
+   "n_persona": 640,
+   "poleA": 1,
+   "poleB": 2,
+   "options": [
+    {
+     "n": 1,
+     "label": "결혼·출산 가구에 대한 세금 혜택 확대",
+     "human_pct": 51.3,
+     "persona_pct": 0.2
+    },
+    {
+     "n": 2,
+     "label": "부모급여·아동수당 등 현금성 지원 확대",
+     "human_pct": 39.6,
+     "persona_pct": 57.8
+    },
+    {
+     "n": 3,
+     "label": "임신·출산 의료서비스 및 건강관리 지원 확대",
+     "human_pct": 41.2,
+     "persona_pct": 52.2
+    },
+    {
+     "n": 4,
+     "label": "난임 비용·휴가·상담 지원 확대",
+     "human_pct": 30.6,
+     "persona_pct": 13.1
+    },
+    {
+     "n": 5,
+     "label": "소아의료 서비스 이용 편의성 제고",
+     "human_pct": 26.2,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 6,
+     "label": "생활밀착형 혜택 확대",
+     "human_pct": 11.1,
+     "persona_pct": 76.7
+    }
+   ]
+  },
+  "birth4": {
+   "measure_human": "1+2순위 선택률",
+   "n_persona": 640,
+   "poleA": 1,
+   "poleB": 3,
+   "options": [
+    {
+     "n": 1,
+     "label": "주택구입·전세자금 소득기준 추가 완화",
+     "human_pct": 45.3,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 2,
+     "label": "출산가구 대상 주거 대출금리 인하",
+     "human_pct": 34.9,
+     "persona_pct": 67.2
+    },
+    {
+     "n": 3,
+     "label": "주택청약 요건 완화 및 기회 확대(신혼·출산)",
+     "human_pct": 39.7,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 4,
+     "label": "신혼·출산가구 주거 대출금액 확대",
+     "human_pct": 29.6,
+     "persona_pct": 0.0
+    },
+    {
+     "n": 5,
+     "label": "신혼·출산·다자녀가구 전용 주택 공급 확대",
+     "human_pct": 33.7,
+     "persona_pct": 97.7
+    },
+    {
+     "n": 6,
+     "label": "월세 세액공제 확대 등 주거비 부담 완화",
+     "human_pct": 16.9,
+     "persona_pct": 35.2
+    }
+   ]
+  }
+ }
+}
