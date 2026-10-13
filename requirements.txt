@@ -1,0 +1,3 @@
+openai>=1.0
+numpy>=1.24
+pyreadstat>=1.2   # only for the KEI microdata analyses

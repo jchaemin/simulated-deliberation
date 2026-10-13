@@ -1,87 +1,59 @@
 # From Simulated Citizens to Simulated Deliberation
 
+## Layout
 
 ```
-run_survey.py         persona surveys (Section 4)
-run_deliberation.py   debates and their controls (Section 5)
-run_judge.py          LLM-judge scoring: Discourse Quality Index, argument repertoire
-analyze.py            recompute paper exhibits from data/ and runs/  (no API)
-harness/              API client, persona and question definitions, shared engine (core.py)
-data/                 persona pools and per-persona survey responses
-runs/                 per-room debate records, judge scores, and run summaries
-origformat/           original-format replication (Appendix C), self-contained; see its README
+simdelib/          the library
+  llm.py             chat client (OpenRouter; reasoning off for agents, minimal for the two reasoning judges)
+  questions.py       the eight Korean questions, their survey benchmarks by group, and the five U.S. items
+  personas.py        persona pools and persona prompts
+  prompts.py         survey and speaking-turn prompts
+  survey.py          survey calls, option order, answer parsing
+  deliberation.py    debate, sealed monologue, anchoring conditions, room construction, population-matched sides
+  judging.py         Discourse Quality Index and argument-repertoire judges
+  shinkori.py        Shin-Kori panel, booklet, poll-specific prompts
+  questionnaire.py   the original survey items and their recode (Appendix B)
+  kei.py             KEI microdata loader and downloader
+  stats.py           shared analysis helpers
+experiments/       one script per experiment; each writes results/
+analysis/          one script per part of the paper; prints the numbers and writes tables/ and results/derived/
+data/              persona pools, Shin-Kori panel, original survey items
+results/           all outputs (one folder per experiment)
+tables/            LaTeX table rows written by the analysis scripts
 ```
 
-## Setup
+## Rerun the experiments
 
-```
-pip install openai
-export OPENROUTER_API_KEY=...   # or OPENAI_API_KEY; needed only to re-run experiments
-```
+Put an OpenRouter key in `.env` (`cp .env.example .env`) or in the environment variable `OPENROUTER_API_KEY`.
+Run every command from the repository root. Model tags: `sol` openai/gpt-6-sol, `luna` openai/gpt-6-luna,
+`mini` openai/gpt-4.1-mini, `deepseek` deepseek/deepseek-v4.1-flash, `haiku` anthropic/claude-haiku-5.5,
+`qwen` qwen/qwen3.8-flash. Judges: `opus` anthropic/claude-opus-5.5, `gemini` google/gemini-3.1-pro-preview, `sol`.
 
-All experiments are API calls to hosted models. Model
-identifiers as used in the paper: `openai/gpt-4.1-mini` (main),
-`openai/gpt-4.1` (judge), `openai/gpt-5.5`, `meta-llama/llama-3.3-70b-instruct`,
-`qwen/qwen-2.5-72b-instruct` (robustness).
+Run order: the persona survey first (rooms are built from it), then debates, then the controls and judges. The
+attribution test reads its statements and each model's booklet-stage answers from `results/shinkori/attribution_inputs.json`.
 
-## Reproducing the paper
+## Data
 
-Verify any exhibit from the released artifacts (no API):
-
-```
-python3 analyze.py table2 table3 table6 table7 fig2 table16 table20 table21 table23 table24 table25
-```
-
-Re-run an experiment:
-
-| Paper item | Command |
-|---|---|
-| Table 2; Tables 8–15 (by-group survey) | `run_survey.py --instrument natural --persona full` |
-| Table 3 columns | `run_survey.py --persona full` / `--persona demographics` / `--persona citizen` / `--persona none` |
-| Table 5 (DQI by round) | `run_judge.py --input runs/debate_natural.jsonl` |
-| Table 6 (debate vs. monologue) | `run_deliberation.py --sides survey --cue none --interaction debate` and `--interaction monologue` |
-| Table 7 (six protocols) | `run_deliberation.py --sides {survey,population} --cue {none,side,opening}` |
-| Figure 2 (compositions) | `run_deliberation.py --composition 6-0` and `--composition 0-6` (balanced from Table 6) |
-| Table 16 (instruments) | `run_survey.py --instrument natural` / `bipolar` / `labeled --order AB` + `--order BA` / `two-ratings`, all at temperature 0; sign-bias factorial: `run_factorial.py`; recompute with `analyze.py table16` |
-| Tables 17–19 (original-format replication) | `origformat/` — own runner, shipped results, and README |
-| Table 20 (cross-model) | `run_survey.py --model {mini,gpt55,llama33,qwen72}` (`gpt55` with `--subsample 120`) |
-| Table 21 (US pool) | `run_survey.py --pool us` (English natural forced choice, temperature 0) -> `data/survey_us.jsonl`; benchmarks in `harness/questions_us.py` |
-| Table 22 (live vs. frozen quality) | `run_judge.py --input <run file>` on the four Table 7 cells |
-| Table 23 (levers) | `run_deliberation.py --panels random --questions env4,birth2,birth4` + `--disclosure demographics` / `--turns simultaneous` / `--size 4|8` / `--opener A|B`; recompute with `analyze.py table23` |
-| Table 24 (injection) | `run_deliberation.py --sides population --cue opening` |
-| Table 25 (decomposition) | stored survey views of the injection run + `run_probe.py` (peers-hidden probe) + the `population_label` arm of `runs/debate_protocols.jsonl`; recompute with `analyze.py table25` |
-| Noise floor (Appendix E) | `run_survey.py --resurvey 2` |
-
-The artifacts in `data/` and `runs/` are the exact runs. We record the
-private stance sequence over rounds 0–3 under the own-turns-included survey
-(`included`) and the own-turns-excluded probe (`excluded`); a room's final
-composition is the count of agents with side A at the last index.
-
-## Data provenance and licenses
-
-- **Personas**: subsets of NVIDIA Nemotron-Personas (Korea and USA splits),
-  used and redistributed under the dataset's published license, with
-  attribution to the original release. Personas are synthetic; no real
-  individuals are represented.
-- **Survey benchmarks**: published aggregate statistics from the 2025 KEI
-  National Environmental Awareness Survey, the 5th Public Awareness Survey
-  of the Presidential Committee on Aging Society and Population Policy, and
-  Pew Research Center topline files, encoded in
-  `harness/questions_kr.py` and `harness/questions_us.py`. No respondent
-  microdata is included; the KEI microdata used in Appendix C is available
-  from the survey's data archive (DOI 10.23160/keidata.31) under its own
-  terms.
-- **Code**: released under the MIT license.
-
-## Notes
-
-- The main survey and all in-debate stance surveys run at temperature 0;
-  speech turns run at temperature 1.0. Option order is randomized per
-  persona and held fixed across rounds (verbatim prompts in the paper's
-  Appendix H and in `harness/core.py`).
-- Survey-chosen (natural) rooms exist only where the survey pools allow
-  them: work-family has one survey-B persona of 640 and supports no
-  balanced room, and environmental means has four survey-A personas and
-  supports one, which the paper excludes; the released survey-side run
-  files contain the six remaining questions. Population-matched runs cover
-  all eight.
+- **Personas.** `data/persona_pool.jsonl` (640 Korean personas, four per sex x age x education x region cell) and
+  `data/persona_pool_usa.jsonl` (the 256 U.S. personas, drawn at random with seed 1 from a pool of 512 with four per
+  sex x age x education x region cell, in the order drawn) are subsets of NVIDIA Nemotron-Personas (Korea and USA
+  splits, CC BY 4.0), with the fields the prompts and the group benchmarks use.
+- **Benchmarks.** Group-level shares of the KEI 2025 and PCASPP surveys and the Pew items are in `simdelib/questions.py`.
+  Pew sources: us1, short read of 2025-05-19 (American Trends Panel 2023-24); us2, ATP wave 128 topline, item EN1
+  (May-June 2023); us3, "Americans' Views of Government's Role" (2024-06-24); us4, abortion fact sheet (2026 update);
+  us5, energy-strategy item.
+- **Original survey items** (Appendix B): `data/original_items_kr.json`, the source items with their option lists and
+  published option shares. The prompts (`simdelib/questionnaire.py`) use the option lists verbatim; the four
+  environmental question stems are reworded for the prompt (the three ranked-choice items ask for a first and a second
+  choice).
+- **KEI microdata** (Appendix B human recode, Appendix C reweighting): publicly distributed by the Korea Environment
+  Institute (DOI 10.23160/keidata.31) but not redistributed here; `python3 -m simdelib.kei` downloads it to
+  `data/kei_microdata/`. `results/derived/original_questionnaire.json` and `results/derived/reweighting.json` are the
+  outputs of the two analyses that use it.
+- **Shin-Kori.** `data/shinkori_panel_498.json` holds, for each of the 498 agents, only the variables used in the prompt
+  (age, sex, province, occupation, party), the age band used for the group comparisons, the wave-1 answer, and the
+  agent's option order, with no record identifiers. They were drawn from the committee's first-wave survey (20,006
+  respondents): the 5,881 respondents the released file marks as volunteers (the committee reports 5,981), sampled by survey weight to the panel's opinion x sex x age cells, shuffled with
+  seed 0, first 498 kept. The raw survey file is not redistributed. The booklet summaries in `simdelib/shinkori.py` were
+  written for this study, one per side, at the same length. The panel's three-way shares (waves 1, 3, 4) are from the
+  committee's report.

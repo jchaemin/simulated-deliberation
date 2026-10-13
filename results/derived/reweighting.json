@@ -1,0 +1,15 @@
+{
+ "summary": {
+  "groups": 60,
+  "gap_raw": 25.04109553180458,
+  "gap_reweighted": 24.160601564091817,
+  "directions_raw": {
+   "match": 41,
+   "reverse": 45
+  },
+  "directions_reweighted": {
+   "match": 42,
+   "reverse": 49
+  }
+ }
+}

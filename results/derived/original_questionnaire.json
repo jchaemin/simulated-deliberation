@@ -1,0 +1,134 @@
+{
+ "sol": {
+  "within_cell": {
+   "env2": {
+    "persona": {
+     "same_pair_pct": 46.25,
+     "pairs_used": 19
+    },
+    "human": {
+     "same_pair_pct": 3.7201015063981426,
+     "pairs_used": 36
+    }
+   },
+   "env3": {
+    "persona": {
+     "same_pair_pct": 46.666666666666664,
+     "pairs_used": 12
+    },
+    "human": {
+     "same_pair_pct": 5.314687831830534,
+     "pairs_used": 28
+    }
+   },
+   "env4": {
+    "persona": {
+     "same_pair_pct": 46.875,
+     "pairs_used": 14
+    },
+    "human": {
+     "same_pair_pct": 7.593182513543185,
+     "pairs_used": 25
+    }
+   }
+  },
+  "top_two": {
+   "birth4": {
+    "either_position_pct": 2.65625,
+    "dedicated_supply_pct": {
+     "persona": 98.75,
+     "human": 33.7
+    }
+   }
+  },
+  "a_shares": {
+   "env1": {
+    "human": 68.20871436256051,
+    "forced_choice": 89.6875,
+    "original_order": 95.35398230088495,
+    "shuffled": 96.73202614379085
+   },
+   "env2": {
+    "human": 53.91705069124424,
+    "forced_choice": 43.28125,
+    "original_order": 70.5,
+    "shuffled": 75.51020408163265
+   },
+   "env3": {
+    "human": 70.35445757250268,
+    "forced_choice": 97.34375,
+    "original_order": 50.490196078431374,
+    "shuffled": 41.80064308681672
+   },
+   "env4": {
+    "human": 50.6401766004415,
+    "forced_choice": 12.1875,
+    "original_order": 93.63057324840764,
+    "shuffled": 95.2
+   },
+   "birth1": {
+    "human": 60.8,
+    "forced_choice": 99.6875,
+    "original_order": 89.13963328631876,
+    "shuffled": 91.83976261127597
+   },
+   "birth2": {
+    "human": 58.4,
+    "forced_choice": 78.75,
+    "original_order": 91.30434782608695,
+    "shuffled": 87.79803646563815
+   },
+   "birth3": {
+    "human": 56.4,
+    "forced_choice": 11.40625,
+    "original_order": 9.268292682926829,
+    "shuffled": 9.090909090909092
+   },
+   "birth4": {
+    "human": 53.3,
+    "forced_choice": 98.125,
+    "original_order": 100.0,
+    "shuffled": 100.0
+   },
+   "mean_gap_7_items": {
+    "forced_choice": 28.82682933666036,
+    "original_order": 30.708366259799504,
+    "shuffled": 32.99671329183832
+   }
+  }
+ },
+ "mini": {
+  "within_cell": {
+   "env2": {
+    "persona": {
+     "same_pair_pct": 50.833333333333336,
+     "pairs_used": 11
+    },
+    "human": {
+     "same_pair_pct": 3.7201015063981426,
+     "pairs_used": 36
+    }
+   },
+   "env3": {
+    "persona": {
+     "same_pair_pct": 92.91666666666667,
+     "pairs_used": 6
+    },
+    "human": {
+     "same_pair_pct": 5.314687831830534,
+     "pairs_used": 28
+    }
+   },
+   "env4": {
+    "persona": {
+     "same_pair_pct": 60.520833333333336,
+     "pairs_used": 5
+    },
+    "human": {
+     "same_pair_pct": 7.593182513543185,
+     "pairs_used": 25
+    }
+   }
+  }
+ }
+}

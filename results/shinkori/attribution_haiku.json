@@ -1,0 +1,1 @@
+{"model": "anthropic/claude-haiku-5.5", "moved_pct": {"self": 80.72289156626506, "none": 36.144578313253014, "expert": 14.65863453815261, "peer": 18.674698795180724}, "statements": {"1": 207, "-1": 285}}
